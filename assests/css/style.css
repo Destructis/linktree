@@ -1,0 +1,78 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* ajout d'un fond de page clair */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #444; /* ajout d'une bordure inférieure */
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px; /* ajout d'un padding pour créer de l'espace */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 20px; /* ajout d'un espace entre les éléments de liste */
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+  transition: color 0.2s ease; /* ajout d'une transition pour les liens */
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Ajout de styles pour les éléments de liste */
+li:before {
+  content: "\2022"; /* ajout d'un symbole de liste */
+  font-size: 18px;
+  color: #337ab7;
+  margin-right: 10px;
+}
+
+li:hover:before {
+  color: #23527c;
+}
+
+/* Ajout de styles pour les médias */
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+  li {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 10px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+}
